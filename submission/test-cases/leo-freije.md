@@ -35,7 +35,7 @@ Category: Spooky
 **Actual result:** Costume submitted! Good luck.
 **Status:** Fail
 **Severity:** Major
-**V or V:** Validation
+**V or V:** Verification
 
 ---
 
