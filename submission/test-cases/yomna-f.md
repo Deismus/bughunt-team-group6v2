@@ -34,23 +34,24 @@ HOW TO USE THIS FILE
 **V or V:** Verification
 ---
 
-**Test ID:**
-**Written by:**
-**Title:**
-**Traces to:**
-**Test type:**
-**Preconditions:**
-**Test data:**
+**Test ID:** TC-4
+**Written by:** Yomna F
+**Title:** Voting deadline countdown ends around 5:00 PM on Oct 31 instead of midnight
+**Traces to:** REQ-13 (Voting closes at midnight on October 31)
+**Test type:** Boundary Value
+**Preconditions:** App is running at profmanjupriya.github.io/fright-night-bug-hunt/app/. Logged in as ghost_gary. Current date/time is known (Oct 29, 2026, 2:55 PM local time).
+**Test data:** Countdown banner in the header; local time of the test machine (San Diego, Pacific time)
 
 **Steps:**
-1.
-2.
-3.
+1. Log in as ghost_gary and note the current local date and time.
+2. Read the "Voting closes in ..." countdown in the top right of the header.
+3. Add the countdown (2d 2h 4m) to the current local time to get the closing time.
+4. Compare the result with the deadline in REQ-13 (midnight on October 31).
 
-**Expected result:**
-**Actual result:**
-**Status:**
-**Severity:**
-**V or V:**
+**Expected result:** The countdown ends at midnight on October 31. On Oct 29 at 2:55 PM it should show about 2d 9h 5m (or 1d 9h 5m, depending on whether "midnight on October 31" means the start or the end of that day).
+**Actual result:** The countdown shows 2d 2h 4m, so voting closes around 5:00 PM on October 31, about 7 hours before midnight.
+**Status:** Fail
+**Severity:** Major
+**V or V:** Verification
 
 ---
