@@ -14,44 +14,23 @@ HOW TO USE THIS FILE
 
 ---
 
-**Test ID:**
-**Written by:**
-**Title:**
-**Traces to:**
-**Test type:** (Unit / Integration / System / Acceptance / Boundary Value / Negative / Security)
-**Preconditions:**
-**Test data:**
+**Test ID: TC-01**
+**Written by: Jordan Baugh**
+**Title: Leaderboard Sorting**
+**Traces to: app.js -> getRankings()**
+**Test type: Unit** (Unit / Integration / System / Acceptance / Boundary Value / Negative / Security)
+**Preconditions: The leaderboard must be populated with at least two costumes, and the one that comes first alphabetically has less votes than the other one.**
+**Test data: blablabla as Costume name, 0 votes for it. hehehe as costume name, 3 votes for it**
 
 **Steps:**
-1.
-2.
-3.
+1. Submit a costume with name as blablabla and don't vote for it
+2. Submit a costume with name as hehehe and vote for it 1+ times.
+3. Open the leaderboard
 
-**Expected result:**
-**Actual result:**
-**Status:** (Pass / Fail)
-**Severity:** (Critical / Major / Minor, Fail only)
-**V or V:** (Verification / Validation, Fail only)
+**Expected result: Since hehehe got more votes it should appear above blablabla**
+**Actual result: blablabla appears above hehehe**
+**Status: Fail** (Pass / Fail)
+**Severity: Critical** (Critical / Major / Minor, Fail only)
+**V or V: Verification** (Verification / Validation, Fail only)
 
----
 
-**Test ID:**
-**Written by:**
-**Title:**
-**Traces to:**
-**Test type:**
-**Preconditions:**
-**Test data:**
-
-**Steps:**
-1.
-2.
-3.
-
-**Expected result:**
-**Actual result:**
-**Status:**
-**Severity:**
-**V or V:**
-
----
