@@ -34,7 +34,7 @@ HOW TO USE THIS FILE
 **V or V:** Verification
 ---
 
-**Test ID:** TC-4
+**Test ID:** TC-5
 **Written by:** Yomna F
 **Title:** Voting deadline countdown ends around 5:00 PM on Oct 31 instead of midnight
 **Traces to:** REQ-13 (Voting closes at midnight on October 31)
@@ -55,3 +55,22 @@ HOW TO USE THIS FILE
 **V or V:** Verification
 
 ---
+**Test ID:** TC-6
+**Written by:** Yomna F
+**Title:** I can vote for my own costume
+**Traces to:** REQ-10 (A user may not vote for their own costume)
+**Test type:** Negative
+**Preconditions:** App is open and I'm logged in as ghost_gary. I still have at least 1 vote left. My costume "Vampire Accountant" is in the list and has 2 votes.
+**Test data:** User ghost_gary, own costume "Vampire Accountant"
+
+**Steps:**
+1. Log in as ghost_gary and go to the Vote tab.
+2. Find "Vampire Accountant" (it says "Submitted by ghost_gary") and write down its votes and my "Votes remaining".
+3. Click the "Vote" button on my own costume.
+4. Look at the vote count, "Votes remaining", and if any message shows up.
+
+**Expected result:** The app should not let me vote for my own costume. The Vote button should be disabled or hidden, or an error message should show. The vote count and "Votes remaining" should stay the same.
+**Actual result:** The app lets me vote for my own costume. 
+**Status:** Fail
+**Severity:** Major
+**V or V:** Verification
