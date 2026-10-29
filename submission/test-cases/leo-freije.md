@@ -14,23 +14,27 @@ HOW TO USE THIS FILE
 
 ---
 
-**Test ID:**
-**Written by:**
-**Title:**
-**Traces to:**
-**Test type:** (Unit / Integration / System / Acceptance / Boundary Value / Negative / Security)
-**Preconditions:**
-**Test data:**
+**Test ID:** TC-03
+**Written by:** Leo Freije
+**Title:** Costume Name Length Test
+**Traces to:** REQ-04
+**Test type:** Boundary Value
+**Preconditions:** Logged in as user: hazel_hex, pass: broomstick
+**Test data:** 
+Name: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa (exactly 51 characters)
+Description: test
+Category: Spooky
+
 
 **Steps:**
-1.
-2.
-3.
+1. Enter a costume that is 51 characters long
+2. Write test in the description
+3. Press Submit
 
-**Expected result:**
-**Actual result:**
-**Status:** (Pass / Fail)
-**Severity:** (Critical / Major / Minor, Fail only)
+**Expected result:** Error, Costume name must be 50 characters or less.
+**Actual result:** Costume submitted! Good luck.
+**Status:** Fail
+**Severity:** Minor
 **V or V:** (Verification / Validation, Fail only)
 
 ---
