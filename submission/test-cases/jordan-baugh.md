@@ -27,8 +27,23 @@ HOW TO USE THIS FILE
 2. Submit a costume with name as hehehe and vote for it 1+ times.
 3. Open the leaderboard
 
-**Expected result: Since hehehe got more votes it should appear above blablabla**
-**Actual result: blablabla appears above hehehe**
+---
+
+**Test ID: TC-04**
+**Written by: Jordan Baugh**
+**Title: Deleting Costumes**
+**Traces to: app.js -> deleteCostume()**
+**Test type: Security** (Unit / Integration / System / Acceptance / Boundary Value / Negative / Security)
+**Preconditions: At least one submitted costume while logged in**
+**Test data: A costume called aaaaaa submitted by ghost_gary**
+
+**Steps:**
+1. Submit a costume with name as aaaaaa as ghost_gary
+2. Log out
+3. Navigate to the Gallery page and Delete it
+
+**Expected result: Since aaaaaa was made by ghost_gary it should not be able to be deleted by anyone**
+**Actual result: aaaaaa is deleted without logging in**
 **Status: Fail** (Pass / Fail)
 **Severity: Critical** (Critical / Major / Minor, Fail only)
 **V or V: Verification** (Verification / Validation, Fail only)
