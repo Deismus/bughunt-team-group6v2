@@ -9,9 +9,9 @@ One person (the team captain) fills this in. Put the Test ID of a **failing** te
 
 | | | |
 |:---:|:---:|:---:|
-| **Unit**<br/>Test ID: | **Integration**<br/>Test ID: | **System (E2E)**<br/>Test ID: |
-| **Boundary Value**<br/>Test ID: | **VALIDATION BUG**<br/>Test ID: | **Negative**<br/>Test ID: |
-| **Security**<br/>Test ID: | **Acceptance**<br/>Test ID: | **Traced to a DIAGRAM**<br/>Test ID: |
+| **Unit**<br/>Test ID: 1 | **Integration**<br/>Test ID: | **System (E2E)**<br/>Test ID: |
+| **Boundary Value**<br/>Test ID: 2 | **VALIDATION BUG**<br/>Test ID: | **Negative**<br/>Test ID: |
+| **Security**<br/>Test ID: 4| **Acceptance**<br/>Test ID: | **Traced to a DIAGRAM**<br/>Test ID: |
 
 The center square needs a test case labeled **Validation**. The bottom-right square needs a test case whose "Traces to" field names the architecture diagram, the class diagram, or the sequence diagram.
 
