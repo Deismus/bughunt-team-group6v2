@@ -34,8 +34,8 @@ Category: Spooky
 **Expected result:** Error, Costume name must be 50 characters or less.
 **Actual result:** Costume submitted! Good luck.
 **Status:** Fail
-**Severity:** Minor
-**V or V:** (Verification / Validation, Fail only)
+**Severity:** Major
+**V or V:** Validation
 
 ---
 
