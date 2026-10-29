@@ -42,7 +42,7 @@ HOW TO USE THIS FILE
 2. Log out
 3. Navigate to the Gallery page and Delete it
 
-**Expected result: Since aaaaaa was made by ghost_gary it should not be able to be deleted by anyone**
+**Expected result: Since aaaaaa was made by ghost_gary it should not be able to be deleted by anyone except ghost_gary**
 **Actual result: aaaaaa is deleted without logging in**
 **Status: Fail** (Pass / Fail)
 **Severity: Critical** (Critical / Major / Minor, Fail only)
